@@ -1,0 +1,146 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-theme {
+    background-color: #f7f7f7ff;
+    color: #2d2d2d;
+}
+
+.dark-theme {
+    background-color: #2b2a2a;
+    color: #e0e0e0;
+}
+
+/* Navigation Styles */
+
+nav {
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #071f30;
+    color: white;
+    padding: 20px 5%;
+
+    
+    position: sticky;
+        top: 0;
+        z-index: 100;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    flex: 1; /* Make all links take up equal space */
+    text-align: center; /* Center text within each link */
+    padding: 10px 0; /* Vertical padding */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffd700;
+}
+
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffd700;
+}
+
+/* Page Content */
+#content {
+    padding-top: 50px; /* Offset for the fixed nav */
+    margin: 80px;
+}
+
+#content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333333; /* Fallback color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    letter-spacing: 2px;
+    line-height: 1.2;
+    background: linear-gradient(90deg, #6a1b9a, #ff8a65);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Gradient text effect */
+}
+
+#content h1 .emoji {
+    -webkit-text-fill-color: initial; /* Reset text fill for gradient */
+    background: none; /* Removes gradient effect */
+    text-shadow: none; /* Removes shadow for clarity */
+    color: #333333; /* Solid color for the emoji */
+}
+
+.download-btn button{
+    text-align: center;
+}
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: inherit; /* Matches theme text color */
+    padding: 0 15px;
+    transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+    color: #ffd700;
+}
+
+/* Center the button */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the button */
+.download-btn {
+    background-color: #071f30;
+    color: white;
+    padding: 15px 10px;
+    font-size: 1.5rem; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+/* Hover effect */
+.download-btn:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: scale(1.1); /* Slightly larger */
+}
+
+/* Active (click) effect */
+.download-btn:active {
+    transform: scale(0.95); /* Slightly smaller */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Softer shadow */
+}
