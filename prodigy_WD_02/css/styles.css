@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #015846, #2b3d3c);
+    color: #fff;
+  }
+  
+  .stopwatch {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #time-display {
+    font-size: 3em;
+    margin: 20px 0;
+  }
+  
+  .buttons button {
+    font-size: 1em;
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  #start {
+    background: #28a745;
+  }
+  
+  #pause {
+    background: #ffc107;
+  }
+  
+  #reset {
+    background: #dc3545;
+  }
+  
+  #lap {
+    background: #007bff;
+  }
+  
+  #laps {
+    margin-top: 20px;
+  }
+  
+  #lap-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #lap-list li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
